@@ -1,0 +1,29 @@
+.jumbotron {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(min-content, 25vw);
+}
+
+.jumbotronLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: #e0edf4;
+}
+
+.jumbotronLeftContent {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.jumbotronText {
+    font-size: min(14vw, 7rem);
+}
+
+.jumbotronRight {
+    background-image: url('./jumbotron-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
