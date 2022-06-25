@@ -2,10 +2,10 @@ import Nav from '../Nav/Nav';
 import Logo from '../Logo/Logo';
 import styles from './Header.module.css';
 
-function Header({ logoText }) {
+function Header() {
     return (
         <header className={styles.header}>
-            <Logo text={logoText} />
+            <Logo />
             <Nav />
         </header>  
     );

@@ -1,8 +1,8 @@
 import styles from './Logo.module.css';
 
-function Logo({ text }) {
+function Logo() {
     return (
-        <h3 className={styles.logo}>{text}</h3>
+        <h3 className={styles.logo}>gather</h3>
     );
 }
 
