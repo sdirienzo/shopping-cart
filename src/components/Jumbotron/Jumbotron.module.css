@@ -19,7 +19,7 @@
 }
 
 .jumbotronText {
-    font-size: min(14vw, 7rem);
+    font-size: calc(3rem + 2.5vw);
 }
 
 .jumbotronRight {
