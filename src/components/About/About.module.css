@@ -5,6 +5,7 @@
     align-items: center;
     row-gap: 30px;
     padding-top: calc(2.5rem + 4vw);
+    padding-bottom: calc(2.5rem + 4vw);
     padding-left: 1rem;
     padding-right: 1rem;
 }
