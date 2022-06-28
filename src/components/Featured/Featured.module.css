@@ -1,0 +1,26 @@
+.featured {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 60px;
+    padding-top: calc(2.5rem + 4vw);
+    padding-bottom: calc(2.5rem + 4vw);
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: #e0edf4;
+}
+
+.featuredHeader {
+    font-size: calc(1.5rem + 2vw);
+    font-weight: normal;
+}
+
+.featuredCollection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, .75fr));
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
