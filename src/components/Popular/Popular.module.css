@@ -1,0 +1,26 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 60px;
+    padding-top: calc(2.5rem + 4vw);
+    padding-bottom: calc(2.5rem + 4vw);
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.popularHeader {
+    font-size: calc(1.5rem + 2vw);
+    font-weight: normal;
+}
+
+.popularCollection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, .75fr));
+    column-gap: 10px;
+    row-gap: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
