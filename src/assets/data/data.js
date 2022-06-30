@@ -183,7 +183,7 @@ export const productData = [
         price: "1399",
         imageUrl: "/dresser-1.jpg",
         featured: false,
-        popular: true
+        popular: false
     },
     {
         id: "18",
