@@ -1,5 +1,5 @@
 import styles from './Featured.module.css';
-import { productData } from '../../assets/data/data';
+import { productData } from '../../assets/data/productData';
 import CollectionItem from '../CollectionItem/CollectionItem';
 
 function Featured() {
