@@ -1,0 +1,23 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    padding-top: calc(2.5rem + 4vw);
+    padding-bottom: calc(2.5rem + 4vw);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.aboutHeader {
+    font-size: calc(1.5rem + 2vw);
+    font-weight: normal;
+}
+
+.aboutDescription {
+    max-width: 650px;
+    text-align: center;
+    line-height: 2rem;
+    font-size: calc(.75rem + .5vw);
+}

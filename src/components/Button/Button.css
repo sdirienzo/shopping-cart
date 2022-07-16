@@ -1,0 +1,14 @@
+.btn {
+    width: fit-content;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    padding: 14px 40px;
+    font-size: 1rem;
+    background-color: #161616;
+    color: white;
+}

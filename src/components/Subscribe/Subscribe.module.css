@@ -1,0 +1,42 @@
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+    padding: calc(2.5rem + 3vw);
+    background-color: #faefed;
+}
+
+.subscribeHeader {
+    font-size: calc(1.5rem + 1.75vw);
+    font-weight: normal;
+}
+
+.subscribeDescription {
+    font-size: calc(.75rem + .5vw);
+}
+
+.subscribeEmailContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 25px;
+}
+
+.subscribeEmailInput {
+    min-width: 240px;
+    max-width: 400px;
+    flex-grow: 1;
+    height: 48px;
+    padding: 4px 8px;
+    font-size: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+.subscribeEmailInput:focus {
+    outline: none;
+}
