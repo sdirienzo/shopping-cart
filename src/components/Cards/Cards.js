@@ -2,9 +2,6 @@ import Card from '../Card/Card';
 import styles from './Cards.module.css'
 
 function Cards({ cards }) {
-
-    console.log(cards);
-
     return (
         <section className={styles.cards}>
             {cards.map(card => (
