@@ -4,7 +4,7 @@ import styles from './Logo.module.css';
 function Logo() {
     return (
         <h3 className={styles.logo}>
-            <Link to='/'>gather.</Link>
+            <Link to='/'>gather<span className={styles.logoDot}>.</span></Link>
         </h3>
     );
 }
