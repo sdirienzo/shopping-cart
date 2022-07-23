@@ -19,7 +19,7 @@ function Footer() {
                     <h4>Shop</h4>
                     <ul className={styles.footerLinks}>
                         <li className={styles.footerLink}>Chairs</li>
-                        <li className={styles.footerLink}>Coffee Tables</li>
+                        <li className={styles.footerLink}>Tables</li>
                         <li className={styles.footerLink}>Couches</li>
                         <li className={styles.footerLink}>Dressers</li>
                         <li className={styles.footerLink}>Lamps</li>

@@ -12,7 +12,7 @@ function Nav() {
                     <Link to='/shop/chairs'>Chairs</Link>
                 </li>
                 <li className={styles.navLink}>
-                    <Link to='/shop/coffee-tables'>Coffee Tables</Link>
+                    <Link to='/shop/tables'>Tables</Link>
                 </li>
                 <li className={styles.navLink}>
                     <Link to='/shop/dressers'>Dressers</Link>
