@@ -8,25 +8,16 @@ function Shop() {
     
     const [heading, setHeading] = useState("");
 
-    useEffect(()=> {
-        updateHeading();
-    }, []);
+    useEffect(function updateHeading() {
+        setHeading(category)
+    }, [category]);
 
     const [products, setProducts] = useState([]);
 
-    useEffect(() => {
-        getProducts();
-    }, []);
-
-    const updateHeading = () => {
-        setHeading(category)
-    }
-
-    const getProducts = () => {
+    useEffect(function getProducts() {
         const newProducts = productData.filter(product => product.category === category);
-
         setProducts(newProducts);
-    }
+    }, [category]);
 
     return (
         <main>
