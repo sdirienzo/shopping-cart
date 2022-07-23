@@ -1,15 +1,13 @@
+import { Link } from 'react-router-dom';
 import styles from './Card.module.css';
 
-function Card({ id, name, price, imageUrl, onClick }) {
-
-    const handleClick = () => {
-        onClick(id);
-    }
-
+function Card({ id, name, price, imageUrl }) {
     return (
-        <article className={styles.card} onClick={handleClick}>
+        <article className={styles.card}>
             <figure className={styles.cardFigure}>
-                <img className={styles.cardImage} src={require(`../../assets/images${imageUrl}`)} alt='' />
+                <Link to={`/product/${id}`}>
+                    <img className={styles.cardImage} src={require(`../../assets/images${imageUrl}`)} alt='' />
+                </Link>
                 <figcaption className={styles.cardCaption}>
                     <p className={styles.cardName}>{name}</p>
                     <p className={styles.cardPrice}>{`$${price}`}</p>
