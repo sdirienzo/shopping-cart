@@ -1,0 +1,15 @@
+.shop {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.shopHeading {
+    font-size: calc(2rem + .75vw);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
 import { productData } from '../../assets/data/productData';
-import Cards from "../Cards/Cards";
+import Cards from '../Cards/Cards';
+import styles from './Shop.module.css'
 
 function Shop() {
-    let { category } = useParams();
+    const { category } = useParams();
     
     const [heading, setHeading] = useState("");
 
@@ -20,8 +21,8 @@ function Shop() {
     }, [category]);
 
     return (
-        <main>
-            <h3>{`All ${heading}`}</h3>
+        <main className={styles.shop}>
+            <h3 className={styles.shopHeading}>{`All ${heading}`}</h3>
             <Cards cards={products} />
         </main>
     );
