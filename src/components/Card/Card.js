@@ -11,8 +11,8 @@ function Card({ id, name, price, imageUrl, onClick }) {
             <figure className={styles.cardFigure}>
                 <img className={styles.cardImage} src={require(`../../assets/images${imageUrl}`)} alt='' />
                 <figcaption className={styles.cardCaption}>
-                    <p>{name}</p>
-                    <p>{price}</p>
+                    <p className={styles.cardName}>{name}</p>
+                    <p className={styles.cardPrice}>{`$${price}`}</p>
                 </figcaption>
            </figure>
         </article>
