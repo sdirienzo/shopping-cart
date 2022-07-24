@@ -1,13 +1,12 @@
-.product {
-    flex-grow: 1;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    border: 1px solid red;
+@media screen and (min-width: 992px) {
+    .product {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
 }
 
-.productLeft,
-.productRight {
-    border: 1px solid blue;
+.product {
+    flex-grow: 1;
 }
 
 .productLeft {
@@ -27,14 +26,17 @@
 .productRight {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
-    padding: 50px 40px 50px 40px;
+    align-items: center;
+    row-gap: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .productHeading {
     display: flex;
     justify-content: center;
     column-gap: 20px;
+    max-width: 75%;
     font-size: calc(1.5rem + .75vw);
 }
 
@@ -44,5 +46,6 @@
 }
 
 .productDescription {
-    line-height: 25px;
+    max-width: 75%;
+    line-height: 30px;
 }

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { productData } from '../../assets/data/productData';
+import AddToCartButton from '../AddToCartButton/AddToCartButton';
 import styles from './Product.module.css';
 
 function Product() {
@@ -37,8 +38,8 @@ function Product() {
                     <span className={styles.productName}>{name}</span>
                     <span className={styles.productPrice}>{`$${product.price}`}</span>
                 </h3>
-                <hr/>
                 <p className={styles.productDescription}>{product.description}</p>
+                <AddToCartButton />
             </div>
         </main>
     );
