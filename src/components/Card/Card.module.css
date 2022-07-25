@@ -1,0 +1,26 @@
+.cardFigure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.cardImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardCaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    font-size: 1.4rem;
+}
+
+.cardPrice {
+    color: #faaa9a;
+    font-weight: bold;
+}

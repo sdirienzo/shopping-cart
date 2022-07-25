@@ -1,4 +1,10 @@
 .logo {
     font-size: 2rem;
-    text-transform: lowercase;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.logoDot {
+    color: #faaa9a;
+    font-weight: bold;
 }

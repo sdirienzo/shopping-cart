@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo';
 import styles from './Footer.module.css';
 
@@ -11,18 +12,30 @@ function Footer() {
                 <div className={styles.footerColumn}>
                     <h4>Explore</h4>
                     <ul className={styles.footerLinks}>
-                        <li className={styles.footerLink}>Home</li>
+                        <li className={styles.footerLink}>
+                            <Link to='/'>Home</Link>
+                        </li>
                         <li className={styles.footerLink}>Cart</li>
                     </ul>
                 </div>
                 <div className={styles.footerColumn}>
                     <h4>Shop</h4>
                     <ul className={styles.footerLinks}>
-                        <li className={styles.footerLink}>Chairs</li>
-                        <li className={styles.footerLink}>Coffee Tables</li>
-                        <li className={styles.footerLink}>Couches</li>
-                        <li className={styles.footerLink}>Dressers</li>
-                        <li className={styles.footerLink}>Lamps</li>
+                        <li className={styles.footerLink}>
+                            <Link to='/shop/sofas'>Sofas</Link>
+                        </li>
+                        <li className={styles.footerLink}>
+                            <Link to='/shop/chairs'>Chairs</Link>
+                        </li>
+                        <li className={styles.footerLink}>
+                            <Link to='/shop/tables'>Tables</Link>
+                        </li>
+                        <li className={styles.footerLink}>
+                            <Link to='/shop/dressers'>Dressers</Link>
+                        </li>
+                        <li className={styles.footerLink}>
+                            <Link to='/shop/lamps'>Lamps</Link>
+                        </li>
                     </ul>
                 </div>
                 <div className={styles.footerColumn}>
