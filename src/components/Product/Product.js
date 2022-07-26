@@ -4,7 +4,7 @@ import { productData } from '../../assets/data/productData';
 import AddToCartButton from '../AddToCartButton/AddToCartButton';
 import styles from './Product.module.css';
 
-function Product() {
+function Product({ onAdd }) {
     const { id } = useParams();
 
     const [product, setProduct] = useState(null);
@@ -21,6 +21,10 @@ function Product() {
             setName(product.name);
         }
     }, [product]);
+
+    const handleAddToCart = () => {
+        onAdd(id);
+    }
 
     if (!product) {
         return <div></div>
@@ -39,7 +43,7 @@ function Product() {
                     <span className={styles.productPrice}>{`$${product.price}`}</span>
                 </h3>
                 <p className={styles.productDescription}>{product.description}</p>
-                <AddToCartButton />
+                <AddToCartButton onAdd={handleAddToCart} />
             </div>
         </main>
     );
