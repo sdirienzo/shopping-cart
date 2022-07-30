@@ -1,17 +1,18 @@
 import styles from './CartItem.module.css';
 
-function CartItem({ item, quantity }) {
+function CartItem({ itemDetails, quantity }) {
 
     return (
         <form className={styles.cartItem}>
             <div className={styles.cartItemLeft}>
                 <figure className={styles.cartItemFigure}>
-                    <img className={styles.cartItemImage} src={require(`../../assets/images${item.imageUrl}`)} alt='' />
+                    <img className={styles.cartItemImage} src={require(`../../assets/images${itemDetails.imageUrl}`)} alt='' />
                 </figure>
             </div>
             <div className={styles.cartItemRight}>
                 <div className={styles.cartItemDetails}>
-                    <p className={styles.cartItemName}>{item.name}</p>
+                    <p className={styles.cartItemName}>{itemDetails.name}</p>
+                    <p className={styles.cartItemPrice}>${itemDetails.price}</p>
                     <div className={styles.cartItemOrderDetails}>
                         <button className={styles.carItemRemoveBtn}>-</button>
                         <input className={styles.cartItemOrderQuantity} type="number" value={quantity} />
