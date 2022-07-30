@@ -24,3 +24,20 @@
     grid-auto-rows: 200px;
     row-gap: 50px;
 }
+
+.cartCheckout {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.cartTotalContainer {
+    display: flex;
+    column-gap: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.cartTotal {
+    font-weight: bold;
+    color: #faaa9a;
+}
