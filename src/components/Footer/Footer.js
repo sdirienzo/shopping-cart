@@ -15,7 +15,9 @@ function Footer() {
                         <li className={styles.footerLink}>
                             <Link to='/'>Home</Link>
                         </li>
-                        <li className={styles.footerLink}>Cart</li>
+                        <li className={styles.footerLink}>
+                            <Link to='/cart'>Cart</Link>
+                        </li>
                     </ul>
                 </div>
                 <div className={styles.footerColumn}>
