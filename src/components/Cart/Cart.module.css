@@ -28,6 +28,11 @@
 .cartCheckout {
     grid-column-start: 2;
     grid-column-end: 3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
 }
 
 .cartTotalContainer {

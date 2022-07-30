@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import CartItem from '../CartItem/CartItem';
+import CheckoutButton from '../CheckoutButton/CheckoutButton';
 import styles from './Cart.module.css';
 
 function Cart({ cart, onAdd, onRemove }) {
@@ -26,6 +27,7 @@ function Cart({ cart, onAdd, onRemove }) {
                     <span className={styles.cartTotalLabel}>Total:</span>
                     <span className={styles.cartTotal}>${total}</span>
                 </div>
+                <CheckoutButton />
             </section>
         </main>
     )
