@@ -14,13 +14,13 @@ function App() {
     const newCart = [...cart];
     
     // If product is already in cart, add to its quantity, else add it
-    if (!newCart.some(cartItem => cartItem.item.id === product.id)) {
+    if (!newCart.some(cartItem => cartItem.itemDetails.id === product.id)) {
       const newItem = {};
-      newItem['item'] = product;
+      newItem['itemDetails'] = product;
       newItem['quantity'] = 1;
       newCart.push(newItem);
     } else {
-      const index = newCart.findIndex(cartItem => cartItem.item.id === product.id);
+      const index = newCart.findIndex(cartItem => cartItem.itemDetails.id === product.id);
       newCart[index].quantity++;
     }
 
