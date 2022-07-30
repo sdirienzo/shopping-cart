@@ -23,7 +23,7 @@ function Product({ onAdd }) {
     }, [product]);
 
     const handleAddToCart = () => {
-        onAdd(id);
+        onAdd(product);
     }
 
     if (!product) {

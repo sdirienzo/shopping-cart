@@ -8,13 +8,21 @@ import Cart from './components/Cart/Cart';
 import styles from './App.module.css';
 
 function App() {
-  const [cart, setCart] = useState({});
+  const [cart, setCart] = useState([]);
 
-  const addToCart = (id) => {
-    const newCart = { ...cart };
+  const addToCart = (product) => {
+    const newCart = [...cart];
     
     // If product is already in cart, add to its quantity, else add it
-    newCart[id] ? newCart[id]++ : newCart[id] = 1;
+    if (!newCart.some(cartItem => cartItem.item.id === product.id)) {
+      const newItem = {};
+      newItem['item'] = product;
+      newItem['quantity'] = 1;
+      newCart.push(newItem);
+    } else {
+      const index = newCart.findIndex(cartItem => cartItem.item.id === product.id);
+      newCart[index].quantity++;
+    }
 
     setCart(newCart);
   }
@@ -43,7 +51,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/shop/:category" element={<Shop />} />
           <Route path="/product/:id" element={<Product onAdd={addToCart} />} />
-          <Route path="/cart" element={<Cart onAdd={addToCart} onRemove={removeFromCart} />} />
+          <Route path="/cart" element={<Cart cart={cart} onAdd={addToCart} onRemove={removeFromCart} />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>
