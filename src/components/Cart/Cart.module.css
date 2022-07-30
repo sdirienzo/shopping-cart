@@ -1,0 +1,26 @@
+.cart {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: minmax(1rem, 1fr) minmax(auto, 70ch) minmax(1rem, 1fr);
+    justify-items: center;
+    row-gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.cartHeading {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: calc(2rem + .75vw);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.cartItems {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: grid;
+    grid-auto-rows: 200px;
+    row-gap: 50px;
+}
