@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+## GATHER
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A furniture e-commerce front-end application built with React, React Router, JavaScript, and CSS.
 
-## Available Scripts
+## Project Status
+This project is largely complete from a front-end perspective.  However, I intend to extend the applicationt to include additional functionality as I learn new skills.  Examples include:
+  - Tweaks to the UI, such as product image sizes
+  - An About Us page and functionality to navigate to it
+  - Functionality to navigate to an All Furniture page
+  - A back-end to store product data and handle CRUD operations
+  - Functionality to persist a user's cart with use of localStorage
 
-In the project directory, you can run:
+## Project Screen Shot(s)
 
-### `npm start`
+#### Home Page  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Home Page](gather-home-page.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Shop Page
 
-### `npm test`
+![Shop Page](gather-shop-page.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Product Page
 
-### `npm run build`
+![Product Page](gather-product-page.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Cart Page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Cart Page](gather-cart-page.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation and Setup Instructions  
 
-### `npm run eject`
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Installation:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`npm install`  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To Run Test Suite:  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+`npm test`  
 
-## Learn More
+To Start Server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`npm start`  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To Visit App:
 
-### Code Splitting
+`localhost:3000`  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Reflection
 
-### Analyzing the Bundle Size
+This was a 1+ month long project built on nights and weekends as part of The Odin Project course.  The original goal was to implement React Router which I had recently learned.  Project goals evolved from there to treat it as a stretch assignment to use all of the technologies I learned up until this point, with a strong emphasis on React and React functional components.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+I wanted to really stretch my front-end "muscles" and challenge myself to create what I considered a legitmately good looking application with the core functionality of an e-commerce site, albeit without a back-end.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The technologies implemented in this project are React, React-Router, JSX, VanillaJS, and CSS.
