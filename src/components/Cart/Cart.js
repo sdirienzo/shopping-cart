@@ -19,7 +19,7 @@ function Cart({ cart, onAdd, onRemove }) {
             <h3 className={styles.cartHeading}>Shopping Cart</h3>
             <section className={styles.cartItems}>
                 {cart.map(item => (
-                    <CartItem key={item.itemDetails.id} {...item} />
+                    <CartItem key={item.itemDetails.id} {...item} onAdd={onAdd} onSubtract={onRemove} />
                 ))}
             </section>
             <section className={styles.cartCheckout}>

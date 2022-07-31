@@ -27,18 +27,19 @@ function App() {
     setCart(newCart);
   }
 
-  const removeFromCart = (id) => {
-    const newCart = { ...cart };
+  const removeFromCart = (product) => {
+    let newCart = [...cart];
 
-    if (!newCart[id]) {
+    if (!newCart.some(cartItem => cartItem.itemDetails.id === product.id)) {
       return;
     }
 
+    const index = newCart.findIndex(cartItem => cartItem.itemDetails.id === product.id);
     // If only 1 quantity of product, remove it from cart, else subtract 1 
-    if (newCart[id] === 1) {
-      newCart.filter((productId) => productId !== id);
+    if (newCart[index].quantity === 1) {
+      newCart = newCart.filter(cartItem => cartItem.itemDetails.id !== product.id);
     } else {
-      newCart[id]--;
+      newCart[index].quantity--;
     }
 
     setCart(newCart);
