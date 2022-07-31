@@ -1,0 +1,11 @@
+.quantitySelector {
+    display: flex;
+}
+
+.quantitySelectorInput {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid lightgray;
+}
