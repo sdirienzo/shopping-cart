@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './CartItem.module.css';
 
 function CartItem({ itemDetails, quantity }) {
@@ -6,7 +7,9 @@ function CartItem({ itemDetails, quantity }) {
         <form className={styles.cartItem}>
             <div className={styles.cartItemLeft}>
                 <figure className={styles.cartItemFigure}>
-                    <img className={styles.cartItemImage} src={require(`../../assets/images${itemDetails.imageUrl}`)} alt='' />
+                    <Link to={`/product/${itemDetails.id}`}>
+                        <img className={styles.cartItemImage} src={require(`../../assets/images${itemDetails.imageUrl}`)} alt='' />
+                    </Link>
                 </figure>
             </div>
             <div className={styles.cartItemRight}>
