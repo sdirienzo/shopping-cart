@@ -1,7 +1,15 @@
 import { Link } from 'react-router-dom';
+import QuantitySelector from '../QuantitySelector/QuantitySelector';
 import styles from './CartItem.module.css';
 
-function CartItem({ itemDetails, quantity }) {
+function CartItem({ itemDetails, quantity, onAdd, onSubtract }) {
+    const handleAdd = () => {
+        onAdd(itemDetails);
+    }
+
+    const handleRemove = () => {
+        onSubtract(itemDetails);
+    }
 
     return (
         <form className={styles.cartItem}>
@@ -16,11 +24,7 @@ function CartItem({ itemDetails, quantity }) {
                 <div className={styles.cartItemDetails}>
                     <p className={styles.cartItemName}>{itemDetails.name}</p>
                     <p className={styles.cartItemPrice}>${itemDetails.price}</p>
-                    <div className={styles.cartItemOrderDetails}>
-                        <button className={styles.carItemRemoveBtn}>-</button>
-                        <input className={styles.cartItemOrderQuantity} type="number" value={quantity} />
-                        <button className={styles.carItemAddBtn}>+</button>
-                    </div>
+                    <QuantitySelector quantity={quantity} onAdd={handleAdd} onSubtract={handleRemove} />
                 </div>
             </div>
         </form>
